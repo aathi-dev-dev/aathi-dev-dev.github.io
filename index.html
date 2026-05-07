@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gampaha-ல இருந்து Aathi</title>
+    <title>Aathi | Gampaha Developer</title>
     <style>
         body {
-            background-color: #1a1a2e;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
             color: white;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 50px;
+            padding: 20px;
+            margin: 0;
+            animation: fadeIn 1s;
         }
-        h1 { color: #00ff88; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h1 { 
+            color: #00ff88; 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 { color: #ffd700; }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #00ff88;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #00ff88;
+            color: #1a1a2e;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ffd700;
+            transform: scale(1.1);
+        }
+        .skills {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>வணக்கம், நான் Aathi 👋</h1>
-    <h2>A/L Commerce Student | Future Developer</h2>
-    <p>Gampaha-ல இருந்து code கத்துக்கிட்டு இருக்கேன்.</p>
-    <h3>எனக்கு தெரிஞ்சது:</h3>
-    <p>HTML, A/L Accounting, Business Studies</p>
+    <div class="container" 
+        <h1>வணக்கம், நான் Aathi 👋</h1>
+        <h2>A/L Commerce Student | Future Developer</h2>
+        <p>Gampaha-ல இருந்து code கத்துக்கிட்டு இருக்கேன்.</p>
+        
+        <div class="skills">
+            <h3>எனக்கு தெரிஞ்சது:</h3>
+            <p>HTML, CSS, A/L Accounting, Business Studies</p>
+            <p>Building my first website 🚀</p>
+        </div>
+
+        <a href="https://instagram.com/Aathi" class="btn">Instagram</a>
+        <a href="https://wa.me/94761553481" class="btn">WhatsApp</a>
+        <a href="https://github.com/aathi-dev-dev" class="btn">GitHub</a>
+    </div>
 </body>
 </html>
